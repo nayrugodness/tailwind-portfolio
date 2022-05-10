@@ -1,13 +1,8 @@
-const Photo = ( {name, url} ) => {
-    return(
-        <>
-            <a href={url}>
-                <button className="">
-                    <h2>{name}</h2>
-                </button>
-            </a>
-        </>
-    )
-}
+import React from 'react';
+import Nayru from '../../../Images/Nayru.jpeg';
 
-export default Photo;
+export const Photo = () => {
+  return (
+    <img className='sm: border-double border-l-rose-800 rounded-full' src= {Nayru}  alt="Homer Simpsons" />
+  )
+}
